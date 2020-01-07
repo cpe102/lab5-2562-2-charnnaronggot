@@ -8,15 +8,31 @@ int main(){
 	
 	string name[N];
 	int age[N];
+	int i = 0;
+	while(i<N)
+		{
 	cout << "Name of student = ";
+	cin >> name[i] ;
 	cout << "Age of student = ";
+	cin >>age[i];
+	i++ ;
+		}
+	i = 0 ;
 	
 	int key;
+	cout << "\n" ;
 	cout << "--------------------------------------\n";
 	cout << "Enter an age to search: ";
-	cin >> key;
+	cin >> key ;
+	
 	cout << "--------------------------------------\n";
 	
+	while (i<N){
+		if (key == age[i]){
+			cout << name[i] << "\n" ;
+		}
+		i++ ;
+	}
 
 	
 	cout << "--------------------------------------\n";
